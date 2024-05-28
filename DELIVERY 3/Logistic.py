@@ -17,7 +17,7 @@ from sklearn.metrics import confusion_matrix, classification_report
 ## leer todos los archivos
 class coin_classifier:
     def __init__(self):
-        self.root = 'Monedas'
+        self.root = 'DELIVERY 3/Monedas'
         self.image_size = (100,100)
         self.test_size = 0.3
         self.max_iter = 1500
