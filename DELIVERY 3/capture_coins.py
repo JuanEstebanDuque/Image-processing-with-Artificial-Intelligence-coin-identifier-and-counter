@@ -29,7 +29,7 @@ while True:
         gray = cv2.dilate(gray, kernel, iterations=1)
 
         detected_circles = cv2.HoughCircles(gray, cv2.HOUGH_GRADIENT, 1, minDist=50, param1=50, param2=30,
-                                            minRadius=20, maxRadius=200)
+                                            minRadius=30, maxRadius=100)
 
         if detected_circles is not None:
             detected_circles = np.uint16(np.around(detected_circles[0, :]))
